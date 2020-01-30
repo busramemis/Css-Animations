@@ -1,0 +1,21 @@
+:root {
+  --background-color: #f5f6f5;
+  --red: #f83c1d;
+  --blue: #20c4f6;
+  --yellow: #efaf0d;
+  --blue: #42a5f5;
+  --dark: #06323a;
+  --shadow: #f3f6f2;
+}
+
+html {
+  font-size: 62.5;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
