@@ -19,3 +19,72 @@ body {
   display: grid;
   place-items: center;
 }
+
+.tram-container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.tram-toper {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+}
+.tram-toper_top {
+  width: 12rem;
+  height: 2.5rem;
+  border: 5px solid var(--dark);
+  border-radius: 30px;
+}
+.tram-toper_bottom {
+  width: 3.3rem;
+  height: 6.5rem;
+  border: 5px solid var(--dark);
+  border-radius: 30px;
+  margin-top: -5px;
+  position: relative;
+}
+.tram-toper_bottom::after {
+  content: '';
+  position: absolute;
+  top: 40%;
+  left: -11px;
+  width: 4.3rem;
+  border: 3.5px solid var(--dark);
+  border-radius: 5px;
+}
+
+.tram-top {
+  width: 20rem;
+  height: 2rem;
+  background-color: var(--dark);
+  border-radius: 15px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+  z-index: 2;
+  margin-top: -15px;
+}
+.tram-top_lights-container {
+  width: 16rem;
+  height: 2rem;
+  background-color: var(--dark);
+  border-radius: 15px;
+}
+.tram-top_light {
+  width: 17rem;
+  height: 1rem;
+}
